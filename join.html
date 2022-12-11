@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/rwdcommon.css">
+    <link rel="stylesheet" href="./css/join.css">
+    <link rel="icon" href="./img/favi.png">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <title>The Body Shop</title>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+    <div id="wrap">
+        <!-- 상단영역 -->
+        <header id="header">
+            <div class="top_menu">
+                <div class="low">
+                    <a href="./login.html">로그인</a>
+                    <a href="./join.html">회원가입</a>
+                    <a href="#none">LYB멤버십</a>
+                    <a href="#none">고객센터</a>
+                </div>
+            </div>
+            <div class="menu low">
+                <h1><a href="index.html"><img src="./img/logo.png" alt="더바디샵로고"></a></h1>
+                <div class="opennav">
+                    <span class="blind">네비게이션 열고 닫기</span>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                    <div class="nav">
+                        <ul class="depth1 cf">
+                            <li>
+                                <a href="#">TRENDING</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">TIP&Advice</a></li>
+                                    <li><a href="#none">Best Sellers</a></li>
+                                    <li><a href="#none">Vigan</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">제품</a>
+                                <ul class="depth2 product">
+                                    <li><a href="#none">전체보기</a></li>
+                                    <li><a href="#none">NEW</a></li>
+                                    <li class="depthgroup1">
+                                        <a href="#">FACE</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">FACE 전체보기</a></li>
+                                            <li><a href="#none">클렌저</a></li>
+                                            <li><a href="#none">스크럽&마스크</a></li>
+                                            <li><a href="#none">페이스오일</a></li>
+                                            <li><a href="#none">토너&미스트</a></li>
+                                            <li><a href="#none">세럼</a></li>
+                                            <li><a href="#none">모이스처라이저</a></li>
+                                            <div>
+                                                <li><a href="#none">아이케어</a></li>
+                                                <li><a href="#none">립케어</a></li>
+                                                <li><a href="#none">메이크업</a></li>
+                                                <li><a href="#none">화장솜&액세서리</a></li>
+                                                <li><a href="#none">남성스킨케어</a></li>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li class="depthgroup2">
+                                        <a href="#">BODY</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">BODY 전체보기</a></li>
+                                            <li><a href="#none">대용량 바디케어</a></li>
+                                            <li><a href="#none">배쓰&샤워</a></li>
+                                            <li><a href="#none">바디스크럽</a></li>
+                                            <li><a href="#none">바디모이스처라이저</a></li>
+                                            <li><a href="#none">바디 오일</a></li>
+                                            <li><a href="#none">바디 미스트</a></li>
+                                            <div>
+                                                <li><a href="#none">데오도란트</a></li>
+                                                <li><a href="#none">풋케어</a></li>
+                                                <li><a href="#none">핸드크림</a></li>
+                                                <li><a href="#none">비누</a></li>
+                                                <li><a href="#none">액세서리</a></li>
+                                                <li><a href="#none">트래블 에센셜</a></li>
+                                                <li><a href="#none">핸드워시</a></li>
+                                                <li class="menuright"><a href="#none">세트 상품</a></li>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li class="depthgroup3">
+                                        <a href="#">HAIR</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">HAIR 전체보기</a></li>
+                                            <li><a href="#none">샴푸</a></li>
+                                            <li><a href="#none">컨디셔너&트리트먼트</a></li>
+                                            <li><a href="#none">액세서리</a></li>
+                                            <li><a href="#none">대용량 헤어케어</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">향수</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">FRAGRANCE 전체보기</a></li>
+                                    <li><a href="#none">For Him</a></li>
+                                    <li><a href="#none">For Her</a></li>
+                                    <li><a href="#none">For Everyone</a></li>
+                                    <li><a href="#none">오 드 퍼퓸</a></li>
+                                    <li><a href="#none">오 드 뚜왈렛</a></li>
+                                    <li><a href="#none">바디 미스트</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">선물</a>
+                                <ul class="depth2 gift">
+                                    <li><a href="#none">선물세트 전체보기</a></li>
+                                    <li><a href="#none">1만원대 선물세트</a></li>
+                                    <li><a href="#none">2만원대 선물세트</a></li>
+                                    <li><a href="#none">3만원대 선물세트</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">세일</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">세일</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">SELF LOVE</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">셀프러브란?</a></li>
+                                    <li><a href="#none">셀프러브로 맞서자</a></li>
+                                    <li><a href="#none">리딩라이츠</a></li>
+                                    <li><a href="#none">셀프러브 팁</a></li>
+                                    <li><a href="#none">셀프러브 마사지</a></li>
+                                    <li><a href="#none">셀프러브 퀴즈</a></li>
+                                    <li><a href="#none">셀프러브 인덱스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">ABOUT US</a>
+                                <ul class="depth2 aboutus">
+                                    <li class="aboutus-sub">
+                                        <a href="#none">About Us</a>
+                                        <ul>
+                                            <li><a href="#none">브랜드 스토리</a></li>
+                                            <li><a href="#none">브랜드 목적</a></li>
+                                            <li><a href="#none">B코프 인증기업</a></li>
+                                            <li><a href="#none">Natura & Co</a></li>
+                                            <li><a href="#none">제품원료</a></li>
+                                            <li><a href="#none">About CBS</a></li>
+                                            <li><a href="#none">캠페인</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="aboutus-sub">
+                                        <a href="#none">Our Values</a>
+                                        <ul>
+                                            <li><a href="#none">지구를 위한 실천, 리필바</a></li>
+                                            <li><a href="#none">여성 권익 신장을 위한 캠페인 히스토리</a></li>
+                                            <li><a href="#none">더바디샵만의 공정무역 프로그램</a></li>
+                                            <li><a href="#none">지속 가능한 패키징</a></li>
+                                            <li><a href="#none">공정무역으로 재탄생한 플라스틱 이야기</a></li>
+                                            <li><a href="#none">비건 & 베지테리언 제품 알아보기</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="aboutus-sub">
+                                        <a href="#none">Event</a>
+                                        <ul>
+                                            <li><a href="#">진행 중인 이벤트</a></li>
+                                            <li><a href="#">지난 이벤트</a></li>
+                                            <li><a href="#">당첨자 발표</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="person cf">
+                        <div class="search">
+                            <span class="blind">검색어를 입력하세요</span>
+                            <input type="search"  id="sbox">
+                            <label for="sbox"><i class="fas fa-search icon"></i></label>
+                        </div>
+                        <div class="service">
+                            <a href="#"><i class="fa-solid fa-basket-shopping icon"></i></a>
+                            <a href="./login.html"><i class="fa-solid fa-user icon"></i></a>
+                        </div>
+                    </div>
+
+            </div>
+        </header>
+        <!-- 본문내용 시작 -->
+        <section>  
+            <div class="join_wrap">
+                <h3 class="join_title">회원가입</h3>
+                <div class="form_wrap">
+                   <p class="register_info">
+                       <h4>회원정보 입력</h4>
+                       <span>*필수 입력 정보 입니다</span>
+                   </p>
+                   <table class="info_table">
+                        <colgroup>
+                            <col style="width:150px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <span class="empha">*</span>
+                                    <label for="username">이름</label>
+                                </th>
+                                <td><input type="text" name="username" id="username"></td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span class="empha">*</span>
+                                    <label for="userid">아이디</label>
+                                </th>
+                                <td><input type="text" name="userid" id="userid"></td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span class="empha">*</span>
+                                    <label for="userpw">비밀번호</label>
+                                </th>
+                                <td><input type="password" name="userpw" id="userpw" placeholder="영문과 숫자가 혼합된 6~12자리"></td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span class="empha">*</span>
+                                    <label for="userpwok">비밀번호 확인</label>
+                                </th>
+                                <td><input type="password" name="userpwok" id="userpwok" placeholder="비밀번호를 다시 한번 입력해주세요."></td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span class="empha">*</span>
+                                    <label for="emailid">생년월일</label>
+                                </th>
+                                <td>
+                                    <select class="birthbox" id="birth-year"><option disabled selected>출생연도</option></select>
+                                    <select class="birthbox" id="birth-month"><option disabled selected>월</option></select>
+                                    <select class="birthbox" id="birth-day"><option disabled selected>일</option></select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span class="empha">*</span>
+                                    <label for="gender">성별</label>
+                                </th>
+                                <td class="gender">
+                                    <input type="radio" id="male" name="gender" value="m"> <label for="male">남자</label>
+                                    <input type="radio" id="female" name="gender" value="w"> <label for="female">여자</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span class="empha">*</span>
+                                    <label for="emailid">이메일</label>
+                                </th>
+                                <td class="email">
+                                    <input type="text" name="emailid" id="emailid"> @
+                                    <input type="text" name="emaildomain" id="emaildomain">
+                                    <select id="domainlist">
+                                        <option value="self">직접입력</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="daum.net">daum.net</option>
+                                        <option value="hanmeil.net">hanmail.net</option>
+                                        <option value="hatmeil.com">hatmail.com</option>
+                                        <option value="yahoo.com">yahoo.com</option>
+                                        <option value="nate.com">nate.com</option>
+                                        <option value="korea.com">korea.com</option>
+                                        <option value="chol.com">chol.com</option>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="netian.com">netian.com</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span class="empha">*</span>
+                                    <label for="phone">휴대폰</label>
+                                </th>
+                                <td>
+                                    <input type="text" name="phone" id="phone">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <span class="empha">*</span>
+                                    <label for="phone">이용약관 동의</label>
+                                </th>
+                                <td class="agreebox">
+                                    <div>
+                                        <input type="checkbox" id="all"> <label for="all">전체동의</label><br>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="co1" id="co1"> 
+                                        <label for="co1">전자 금융 서비스 이용 약관 동의 [필수]</label>
+                                        <button class="agreebtn1">내용보기</button>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="co2" id="co2"> 
+                                        <label for="co2">웰빙포인트 통합 회원 약관 동의 [필수]</label>
+                                        <button class="agreebtn2">내용보기</button>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="co3" id="co3"> 
+                                        <label for="co3">개인정보 수집이용 및 제3자제공 동의 [필수]</label>
+                                        <button class="agreebtn3">내용보기</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                   </table>
+                </div>
+                <div class="btn"><button type="submit">가입하기</button></div>
+            </div>
+            <div id="layer-popup">
+                <div class="popup">
+                    <h2>전자 금융 서비스 이용 약과 동의</h2>
+                    <div class="pop-in-area">
+                        <span>온라인 회원가입 약관</span><br><br>
+                        <span>제 1장 총 칙</span>
+                        <p>
+                            제 1조 (목적)<br>
+                            이 이용약관 (이하 "약관" 이라 합니다)은 ㈜비에스케이코퍼레이션(이하 "회사"라 합니다)과 이용 고객 (이하 "회원" 이라 합니다)간에 ㈜비에스케이코퍼레이션에서 운영하는 웹사이트 웹 서비스 (이하 "서비스" 라 합니다) 및 회원 가입조건과 이용에 관한 제반 사항과 기타 필요한 사항을 구체적으로 규정함을 목적으로 합니다.
+                            <br>
+                            <br>
+                        </p>
+                        <p>
+                            제 2조 (약관의 효력 및 변경)<br>
+                            ① 본 약관은 서비스에 가입된 고객을 포함하여 서비스를 이용하고자 본 약관에 동의한 모든 회원에 대하여 그 효력을 발생합니다. <br>
+                            ② 이 약관의 내용은 서비스의 일부 화면 또는 기타 방법으로 회원에게 공지하고, 이에 동의한 회원이 서비스에 가입함으로써 효력이 발생합니다. <br>
+                            ③ 회사는 본 약관의 내용을 이용자가 알 수 있도록 사이트의 초기 서비스 화면에 게시합니다. <br>
+                            ④ 본 약관은 회사의 운영 또는 영업상 중요한 사유로 인하여 필요하다고 인정되는 경우 변경할 수 있으며, 약관이 변경된 경우 제 2항과 같은 방법으로 공지함으로써 그 효력을 발생합니다. <br>
+                            ⑤ 회원은 변경된 약관 사항에 동의하지 않으면 서비스 이용을 중단하고, 이용 계약을 해지할 수 있고, 변경된 약관의 효력 발생일로부터 30일 이내 해지 요청을 하지 않은 회원은 변경된 약관에 동의한 것으로 간주합니다. <br>
+                            <br>
+                            <br>
+                        </p>
+                        <p>
+                            제 3 조 (약관 외 준칙)<br>
+                            ① 이 약관에 명시되지 않은 사항은 전기통신기본법, 전기통신사업법, 정보통신망이용촉진 등에 관한 법률 및 기타 관련법령, 회사가 별도로 정한 지침 등에 의합니다. <br>
+                            ② 회사와 회원간의 사업적인 계약과 관련하여 본 약관에서 정하지 않은 사항과 본 약관의 해석에 관하여는 정부가 제정한 전자거래소비자보호지침 및 관계법령 또는 상 관례에 따릅니다. <br>
+                            <br>
+                            <br>
+                        </p>
+                        <p>
+                            제 4 조 (용어의 정의)<br>
+                            ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+                            1. 사이트 : 회사가 재화ㆍ용역ㆍ정보를 이용자에게 제공하기 위하여 컴퓨터 등 정보통신 설비를 이용하여 재화ㆍ용역을 거래할 수 있도록 설정한 가상의 영업장 또는 회사가 운영하는 웹사이트를 말한다. <br>
+                            2. 회원: 서비스를 제공받기 위하여 회사와 이용계약을 체결하거나 이용자 아이디(ID)를 부여 받은 자. <br>
+                            3. 아이디(ID): 회원식별과 회원의 서비스 이용을 위하여 회원이 선정하고 회사가 승인하는 이메일 주소.<br>
+                            4. 비밀번호: 회원의 비밀보호를 위해 회원자신이 설정한 영문자와 숫자의 조합. <br>
+                            5. 해지: 회사 또는 회원이 서비스 이용 이후 그 이용계약을 종료시키는 의사표시. <br>
+                            6. 몰: 회사가 재화 또는 용역을 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 재화 등을 거래할 수 있도록 설정한 가상의 영업장을 말하며, 아울러 몰을 운영하는 사업자의 의미로도 사용합니다. <br>
+                            7. 본 약관에서 사용하는 용어의 정의는 본 조에서 정한 것을 제외하고는 거래 관행 및 관계 법령을 따릅니다. <br>
+                            <br>
+                            <br>
+                        </p>
+                        <p>부칙
+    
+                            본 약관은 2021년 5월 1일부터 시행됩니다 
+                            
+                        </p>
+                    </div>
+                    <button class="popbtn">닫기</div>
+                </div>
+                <div class="black"></div>
+            </div>
+            <div id="layer-popup-merge">
+                <div class="popup-merge">
+                    <h2>웰빙포인트 통합회원 약관 동의</h2>
+                    <div class="pop-in-area">
+                        <span>웰빙포인트 통합회원 이용 약관</span><br><br>
+                        <span>제 1장 총 칙</span>
+                        <p>
+                            제 1조 (목적)<br>
+                            본 약관은 웰빙포인트 통합회원(아래에서 정의)이 (주)비에스케이코퍼레이션(이하 “당사”라 함)이 제공하는 웰빙포인트 서비스를 이용함에 있어 웰빙포인트 통합회원과 당사의 제반 권리.의무 및 관련절차 등을 규정하는데 그 목적이 있습니다.
+                            <br>
+                            <br>
+                        </p>
+                        <p>
+                            제 2조 (약관의 효력 및 변경)<br>
+                            ① 본 약관은 서비스에 가입된 고객을 포함하여 서비스를 이용하고자 본 약관에 동의한 모든 회원에 대하여 그 효력을 발생합니다. <br>
+                            ② 이 약관의 내용은 서비스의 일부 화면 또는 기타 방법으로 회원에게 공지하고, 이에 동의한 회원이 서비스에 가입함으로써 효력이 발생합니다. <br>
+                            ③ 회사는 본 약관의 내용을 이용자가 알 수 있도록 사이트의 초기 서비스 화면에 게시합니다. <br>
+                            ④ 본 약관은 회사의 운영 또는 영업상 중요한 사유로 인하여 필요하다고 인정되는 경우 변경할 수 있으며, 약관이 변경된 경우 제 2항과 같은 방법으로 공지함으로써 그 효력을 발생합니다. <br>
+                            ⑤ 회원은 변경된 약관 사항에 동의하지 않으면 서비스 이용을 중단하고, 이용 계약을 해지할 수 있고, 변경된 약관의 효력 발생일로부터 30일 이내 해지 요청을 하지 않은 회원은 변경된 약관에 동의한 것으로 간주합니다. <br>
+                            <br>
+                            <br>
+                        </p>
+                        <p>
+                            제 3 조 (약관 외 준칙)<br>
+                            ① 이 약관에 명시되지 않은 사항은 전기통신기본법, 전기통신사업법, 정보통신망이용촉진 등에 관한 법률 및 기타 관련법령, 회사가 별도로 정한 지침 등에 의합니다. <br>
+                            ② 회사와 회원간의 사업적인 계약과 관련하여 본 약관에서 정하지 않은 사항과 본 약관의 해석에 관하여는 정부가 제정한 전자거래소비자보호지침 및 관계법령 또는 상 관례에 따릅니다. <br>
+                            <br>
+                            <br>
+                        </p>
+                        <p>
+                            제 4 조 (용어의 정의)<br>
+                            ① 이 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br>
+                            1. 사이트 : 회사가 재화ㆍ용역ㆍ정보를 이용자에게 제공하기 위하여 컴퓨터 등 정보통신 설비를 이용하여 재화ㆍ용역을 거래할 수 있도록 설정한 가상의 영업장 또는 회사가 운영하는 웹사이트를 말한다. <br>
+                            2. 회원: 서비스를 제공받기 위하여 회사와 이용계약을 체결하거나 이용자 아이디(ID)를 부여 받은 자. <br>
+                            3. 아이디(ID): 회원식별과 회원의 서비스 이용을 위하여 회원이 선정하고 회사가 승인하는 이메일 주소.<br>
+                            4. 비밀번호: 회원의 비밀보호를 위해 회원자신이 설정한 영문자와 숫자의 조합. <br>
+                            5. 해지: 회사 또는 회원이 서비스 이용 이후 그 이용계약을 종료시키는 의사표시. <br>
+                            6. 몰: 회사가 재화 또는 용역을 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 재화 등을 거래할 수 있도록 설정한 가상의 영업장을 말하며, 아울러 몰을 운영하는 사업자의 의미로도 사용합니다. <br>
+                            7. 본 약관에서 사용하는 용어의 정의는 본 조에서 정한 것을 제외하고는 거래 관행 및 관계 법령을 따릅니다. <br>
+                            <br>
+                            <br>
+                        </p>
+                        <p>부칙
+    
+                            본 약관은 2021년 5월 1일부터 시행됩니다 
+                            
+                        </p>
+                    </div>
+                    <button class="popbtn2">닫기</div>
+                </div>
+                <div class="black"></div>
+            </div>
+            <div id="layer-popup-info">
+                <div class="popup-info">
+                    <h2>개인정보 수집동의</h2>
+                    <div class="pop-in-area">
+                        <p>
+                            - (주)비에스케이코퍼레이션(이하 “회사”)은 회원님의 개인정보를 안전하게 보호하기 위하여 최선의 노력을 다하고 있으며, 개인정보보호 관련 법령 및 정부기관의 가이드라인을 준수하고 있습니다.<br>
+                            - 회사는 개인정보 처리방침을 통하여 회원님의 개인정보가 어떻게 이용되고 있고, 이용 시 어떠한 보호조치가 취해지고 있는지 알려드립니다.<br>
+                            - 개인정보 처리방침은 법령의 변경이나, 보다 나은 서비스의 제공을 위하여 내용이 변경될 수 있습니다. 이 경우 회사는 웹 사이트의 공지사항 또는 이메일을 통해서 공지하고 있습니다. 개인정보 처리방침은 홈페이지 첫 화면의 맨 아래에 고객만족센터 하위 메뉴에 표시되어 있습니다.<br>
+                            - 개인정보 처리방침과 이용 약관의 개인정보 관련한 내용의 경우 이용약관이 우선 순위를 갖습니다.<br> 
+                            <br>
+                            <br>
+                        </p>
+                        <p>
+                            <span>1. 개인정보의 수집 및 이용 목적</span>
+                            <br>
+                            회사는 상품구매와 개인별 혜택 제공 및 이벤트 참여를 제외한 모든 서비스를 가입하지 않고 이용할 수 있습니다.<br>
+                            가. 회사는 회원가입 시 서비스 제공을 위해 필요한 최소한의 정보를 필수 사항으로 수집하고 있습니다. 다만 회원님에게 맞춤서비스를 제공하기 위하여 추가적인 개인정보를 선택적으로 입력받고 있습니다.<br>
+                            나. 회사는 회원님의 소중한 인권을 침해할 우려가 있는 민감한 정보(인종, 사상 및 신조, 정치적 성향이나 범죄기록, 의료정보 등)는 어떠한 경우에도 수집하지 않으며, 만약 불가피하게 수집하는 경우에는 반드시 회원님에게 사전 동의를 구하겠습니다.<br>
+                            다. 회사는 회원님들의 개인정보를 다음과 같이 수집합니다.
+                            <br>
+                            <br>
+                        </p>
+                        <p>
+                            회원가입 시 이름, 아이디, 비밀번호, 이메일, 생년월일, 성별, 통신사,휴태폰, 멤버십 바코드 번호를 수집하며 이는 필수 사항입니다.<br>
+                            회원정보 수정시 CI/DI(휴대폰번호 수정 시 본인인증) 필요합니다.<br>
+                            <br>
+                            <br>
+                        </p>
+                        <p>
+                            <span>2. 개인정보의 보유 및 이용기간</span>
+                            <br>
+                            회사는 원칙적으로 개인정보 이용목적 달성 후에는 해당 개인정보를 지체 없이 파기합니다.<br>
+                            단, 내부방침 및 관계 법령의 규정에 의하여 보존할 필요가 있는 경우 아래와 같이 관계 법령에서 정한 일정한 기간 동안 회원정보(이용자정보에 한함)를 보관합니다.<br>
+                            <br>
+                            <br>
+                        </p>
+                        <p>부칙
+    
+                            본 약관은 2021년 5월 1일부터 시행됩니다 
+                            
+                        </p>
+                    </div>
+                    <button class="popbtn3">닫기</div>
+                </div>
+                <div class="black"></div>
+            </div>
+        </section>  
+        <!-- 하단영역 -->
+        <footer>
+            <div class="footerwrap">
+                <div class="footer-top cf">
+                    <div class="footer-menu">
+                        <ul class=footrt-menu-nav>
+                            <li><a href="#none"><span>개인정보처리방침</span></a></li>
+                            <li><a href="#none"><span>약관개정안내</span></a></li>
+                            <li><a href="#none"><span>공지사항</span></a></li>
+                            <li><a href="#none"><span>매장안내</span></a></li>
+                            <li><a href="#none"><span>고객센터</span></a></li>
+                        </ul>
+                    </div>
+                    <span class="fam">Republic of Korea <i class="fa-solid fa-angle-down fam-bt"></i>
+                        <div>
+                            <ul>
+                                <li><a href="#none">Australia</a></li>
+                                <li><a href="#none">Austria</a></li>
+                                <li><a href="#none">Belgium/Belgique</a></li>
+                                <li><a href="#none">Canada</a></li>
+                                <li><a href="#none">Danmark/Denmark</a></li>
+                                <li><a href="#none">Deutschland/Germany</a></li>
+                                <li><a href="#none">Estonia</a></li>
+                                <li><a href="#none">France</a></li>
+                                <li><a href="#none">Global</a></li>
+                                <li><a href="#none">Hong Kong</a></li>
+                                <li><a href="#none">Hungary</a></li>
+                                <li><a href="#none">India</a></li>
+                                <li><a href="#none">Indonesia</a></li>
+                                <li><a href="#none">Italy</a></li>
+                                <li><a href="#none">Japan</a></li>
+                                <li><a href="#none">Latvia</a></li>
+                                <li><a href="#none">Lithuania</a></li>
+                                <li><a href="#none">Malaysia</a></li>
+                                <li><a href="#none">Netherlands</a></li>
+                                <li><a href="#none">Norway</a></li>
+                                <li><a href="#none">Philippines</a></li>
+                                <li><a href="#none">Romania</a></li>
+                                <li><a href="#none">Russia</a></li>
+                                <li><a href="#none">Suisse/Switzerland</a></li>
+                                <li><a href="#none">Singapore</a></li>
+                                <li><a href="#none">South Africa</a></li>
+                                <li><a href="#none">Suomi/Finland</a></li>
+                                <li><a href="#none">Sverige/Sweden</a></li>
+                                <li><a href="#none">Taiwan</a></li>
+                                <li><a href="#none">Thailand</a></li>
+                                <li><a href="#none">UK</a></li>
+                                <li><a href="#none">USA</a></li>
+                                <li><a href="#none">Vietnam</a></li>
+    
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+
+                <div class="footer-bt">
+                    <div class="footer-title">
+                        <span>THE BODY SHOP 사업자 정보</span>
+                        <a href="#none" class="btinfo"><i class="fa-solid fa-angle-down"></i></a>
+                        <div class="footer-toggle">
+                            <span>대표이사 박종호</span>
+                            <span>주소 서울시 강남구 학동로 401 13층</span>
+                            <span>고객센터 08-759-7700</span><br>
+                            <span>개인정보관리책임자 정문식</span>
+                            <span>사업자 등록번호 116-81-62784</span><br>
+                            <span>이메일 주소 webmaster@thebodyshop.co.kr</span>
+                            <span>통신판매업신고번호 제 2010-서울강남-02017호 3</span>
+                        </div>
+                    </div>
+                    <div class="footer-time">
+                        <div class="footer-time-text">
+                            <span>고객센터</span>
+                            <span>080-759-7700</span>
+                            <p>평일 10:00 ~ 17:00<br>
+                                점심시간 12:00 ~ 13:00<br>
+                            </p>
+                        </div>
+                    </div>
+                        <p>Copyright(c) THE BODY SHOP All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>history.scrollRestoration = "manual"</script>
+    <script src="./js/common.js"></script>
+    <script src="./js/join.js"></script>
+</body>
+</html>

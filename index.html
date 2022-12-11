@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/rwdcommon.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/rwdindex.css">
+    <link rel="icon" href="./img/favi.png">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <title>The Body Shop</title>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="top_menu">
+                <div class="low">
+                    <a href="./login.html">로그인</a>
+                    <a href="./join.html">회원가입</a>
+                    <a href="#none">LYB멤버십</a>
+                    <a href="#none">고객센터</a>
+                </div>
+            </div>
+            <div class="menu low">
+               <div class="logonav">
+                    <h1><a href="index.html"><img src="./img/logo.png" alt="더바디샵로고"></a></h1>
+                    <div class="opennav">
+                        <span class="blind">네비게이션 열고 닫기</span>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div id="navbox"></div>
+                    <div class="nav">
+                            <ul class="depth1 cf">
+                                <li>
+                                    <a href="#">TRENDING</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">TIP&Advice</a></li>
+                                        <li><a href="#none">Best Sellers</a></li>
+                                        <li><a href="#none">Vigan</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">제품</a>
+                                    <ul class="depth2 product">
+                                        <li><a href="#none">전체보기</a></li>
+                                        <li><a href="#none">NEW</a></li>
+                                        <li class="depthgroup1">
+                                            <a href="#">FACE</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">FACE 전체보기</a></li>
+                                                <li><a href="#none">클렌저</a></li>
+                                                <li><a href="#none">스크럽&마스크</a></li>
+                                                <li><a href="#none">페이스오일</a></li>
+                                                <li><a href="#none">토너&미스트</a></li>
+                                                <li><a href="#none">세럼</a></li>
+                                                <li><a href="#none">모이스처라이저</a></li>
+                                                <div>
+                                                    <li><a href="#none">아이케어</a></li>
+                                                    <li><a href="#none">립케어</a></li>
+                                                    <li><a href="#none">메이크업</a></li>
+                                                    <li><a href="#none">화장솜&액세서리</a></li>
+                                                    <li><a href="#none">남성스킨케어</a></li>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li class="depthgroup2">
+                                            <a href="#">BODY</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">BODY 전체보기</a></li>
+                                                <li><a href="#none">대용량 바디케어</a></li>
+                                                <li><a href="#none">배쓰&샤워</a></li>
+                                                <li><a href="#none">바디스크럽</a></li>
+                                                <li><a href="#none">바디모이스처라이저</a></li>
+                                                <li><a href="#none">바디 오일</a></li>
+                                                <li><a href="#none">바디 미스트</a></li>
+                                                <div>
+                                                    <li><a href="#none">데오도란트</a></li>
+                                                    <li><a href="#none">풋케어</a></li>
+                                                    <li><a href="#none">핸드크림</a></li>
+                                                    <li><a href="#none">비누</a></li>
+                                                    <li><a href="#none">액세서리</a></li>
+                                                    <li><a href="#none">트래블 에센셜</a></li>
+                                                    <li><a href="#none">핸드워시</a></li>
+                                                    <li class="menuright"><a href="#none">세트 상품</a></li>
+                                                </div>
+                                            </ul>
+                                        </li>
+                                        <li class="depthgroup3">
+                                            <a href="#">HAIR</a>
+                                            <ul class="depth3">
+                                                <li><a href="#none">HAIR 전체보기</a></li>
+                                                <li><a href="#none">샴푸</a></li>
+                                                <li><a href="#none">컨디셔너&트리트먼트</a></li>
+                                                <li><a href="#none">액세서리</a></li>
+                                                <li><a href="#none">대용량 헤어케어</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">향수</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">FRAGRANCE 전체보기</a></li>
+                                        <li><a href="#none">For Him</a></li>
+                                        <li><a href="#none">For Her</a></li>
+                                        <li><a href="#none">For Everyone</a></li>
+                                        <li><a href="#none">오 드 퍼퓸</a></li>
+                                        <li><a href="#none">오 드 뚜왈렛</a></li>
+                                        <li><a href="#none">바디 미스트</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">선물</a>
+                                    <ul class="depth2 gift">
+                                        <li><a href="#none">선물세트 전체보기</a></li>
+                                        <li><a href="#none">1만원대 선물세트</a></li>
+                                        <li><a href="#none">2만원대 선물세트</a></li>
+                                        <li><a href="#none">3만원대 선물세트</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">세일</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">세일</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">SELF LOVE</a>
+                                    <ul class="depth2">
+                                        <li><a href="#none">셀프러브란?</a></li>
+                                        <li><a href="#none">셀프러브로 맞서자</a></li>
+                                        <li><a href="#none">리딩라이츠</a></li>
+                                        <li><a href="#none">셀프러브 팁</a></li>
+                                        <li><a href="#none">셀프러브 마사지</a></li>
+                                        <li><a href="#none">셀프러브 퀴즈</a></li>
+                                        <li><a href="#none">셀프러브 인덱스</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">ABOUT US</a>
+                                    <ul class="depth2 aboutus">
+                                        <li class="aboutus-sub">
+                                            <a href="#none">About Us</a>
+                                            <ul>
+                                                <li><a href="#none">브랜드 스토리</a></li>
+                                                <li><a href="#none">브랜드 목적</a></li>
+                                                <li><a href="#none">B코프 인증기업</a></li>
+                                                <li><a href="#none">Natura & Co</a></li>
+                                                <li><a href="#none">제품원료</a></li>
+                                                <li><a href="#none">About CBS</a></li>
+                                                <li><a href="#none">캠페인</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="aboutus-sub">
+                                            <a href="#none">Our Values</a>
+                                            <ul>
+                                                <li><a href="#none">지구를 위한 실천, 리필바</a></li>
+                                                <li><a href="#none">여성 권익 신장을 위한 캠페인 히스토리</a></li>
+                                                <li><a href="#none">더바디샵만의 공정무역 프로그램</a></li>
+                                                <li><a href="#none">지속 가능한 패키징</a></li>
+                                                <li><a href="#none">공정무역으로 재탄생한 플라스틱 이야기</a></li>
+                                                <li><a href="#none">비건 & 베지테리언 제품 알아보기</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="aboutus-sub">
+                                            <a href="#none">Event</a>
+                                            <ul>
+                                                <li><a href="#">진행 중인 이벤트</a></li>
+                                                <li><a href="#">지난 이벤트</a></li>
+                                                <li><a href="#">당첨자 발표</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                    </div>
+               </div>
+                <div class="person">
+                    <div class="search">
+                        <span class="blind">검색어를 입력하세요</span>
+                        <input type="search"  id="sbox">
+                        <label for="sbox"><i class="fas fa-search icon"></i></label>
+                    </div>
+                    <div class="service">
+                        <a href="#"><i class="fa-solid fa-basket-shopping icon"></i></a>
+                        <a href="./login.html"><i class="fa-solid fa-user icon"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <section>
+            <article class="bannerwrap">
+                <div class="topbanner">
+                    <a href="#none"><img src="./img/fixed.png" alt="신한tops회원혜택"></a><br>
+                    <a href="#none">하루동안 열지 않기</a>
+                    |
+                    <a href="#none" class="tabclose">닫기</a>
+                </div>
+            </article>
+            <div class="bottombanner">
+                <a href="#"><i class="fa-sharp fa-solid fa-angle-up"></i></a>
+            </div>         
+            <article class="article1">
+                    <div class="slide-group">
+                        <div class="slide slide2">
+                            <div></div>
+                        </div>
+                        <div class="slide slide3">
+                        </div>
+                    </div>
+            </article>
+            <article class="article2">
+                <div class="container">
+                    <div class="best-box">
+                        <h3>현재 인기 상품</h3>
+                        <a href="#">
+                            <span>전체보기  <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                    <div class="subslide-group">
+                        <div class="subslide">
+                            <div>
+                                <a href="#"><img src="./img/best_01.jpg" alt=""></a>
+                                <div class="best-subject">
+                                    <a href="#">
+                                        <span>모링가 대용량 샤워젤 750ML </span>
+                                    </a><br>
+                                    <div class="best-price">
+                                        <span>31,000원</span><br>
+                                        <span><i class="fa-solid fa-star"></i> <span>5</span>점</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subslide">
+                            <div>
+                                <a href="#"><img src="./img/best_02.jpg" alt=""></a>
+                                <div class="best-subject">
+                                    <a href="#">
+                                        <span>에델바이스 데일리 세럼 컨센트레이트 50ML </span>
+                                    </a><br>
+                                    <div class="best-price">
+                                        <span>64,000원</span><br>
+                                        <span><i class="fa-solid fa-star"></i> <span>4.8</span>점</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subslide">
+                            <div>
+                                <a href="#"><img src="./img/best_03.jpg" alt=""></a>
+                                <div class="best-subject">
+                                    <a href="#">
+                                        <span>화이트 머스크 샤워젤 400ML </span>
+                                    </a><br>
+                                    <div class="best-price">
+                                        <span>24,000원</span><br>
+                                        <span><i class="fa-solid fa-star"></i> <span>5</span>점</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subslide">
+                            <div>
+                                <a href="#"><img src="./img/best_04-1.jpg" alt=""></a>
+                                <div class="best-subject">
+                                    <a href="#">
+                                        <span>센티드 화이트 머스크 바디 로션 400ML </span>
+                                    </a><br>
+                                    <div class="best-price">
+                                        <span>30,000원</span><br>
+                                        <span><i class="fa-solid fa-star"></i> <span>5</span>점</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subslide">
+                            <div>
+                                <a href="#"><img src="./img/best_05.jpg" alt=""></a>
+                                <div class="best-subject">
+                                    <a href="#">
+                                        <span>진저 스캘프 케어 샴푸 400ML </span>
+                                    </a><br>
+                                    <div class="best-price">
+                                        <span>20,000원</span><br>
+                                        <span><i class="fa-solid fa-star"></i> <span>4.5</span>점</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subslide">
+                            <div>
+                                <a href="#"><img src="./img/best_06.jpg" alt=""></a>
+                                <div class="best-subject">
+                                    <a href="#">
+                                        <span>프레쉬 라즈베리 젤 바디 스크럽 250ML </span>
+                                    </a><br>
+                                    <div class="best-price">
+                                        <span>22,000원</span><br>
+                                        <span><i class="fa-solid fa-star"></i> <span>5</span>점</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subslide">
+                            <div>
+                                <a href="#"><img src="./img/best_07.jpg" alt=""></a>
+                                <div class="best-subject">
+                                    <a href="#">
+                                        <span>슬립 릴렉싱 마사지 오일 100ML </span>
+                                    </a><br>
+                                    <div class="best-price">
+                                        <span>39,000원</span><br>
+                                        <span><i class="fa-solid fa-star"></i> <span>5</span>점</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subslide">
+                            <div>
+                                <a href="#"><img src="./img/best_08.jpg" alt=""></a>
+                                <div class="best-subject">
+                                    <a href="#">
+                                        <span>핑크 그레이프후룻 대용량 샤워젤 750ML </span>
+                                    </a><br>
+                                    <div class="best-price">
+                                        <span>31,000원</span><br>
+                                        <span><i class="fa-solid fa-star"></i> <span>5</span>점</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="article3">
+                <div class="container">
+                    <img src="./img/leaf_01.png" alt="">
+                    <img src="./img/leaf_02.png" alt="">
+
+                    <div class="vigan-box">
+                        <h3>비건 인증 제품 모아보기</h3>
+                        <a href="#">
+                            <span>전체보기  <i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                    </div>
+                    <div class="vigan-slide-group">
+                        <div class="viganslide">
+                            <div>
+                                <a href="#none"><img src="./img/vigan_01.jpg" alt="" class="vigimg"></a>
+                                <div class="vigan-text">
+                                    <a href="#none">
+                                        <span>브리티쉬 로즈 핸드 크림 100ML </span>
+                                    </a><br>
+                                    <div class="vigan-price">
+                                        <span>18,000원</span><br>
+                                        <span><i class="fa-solid fa-star"></i> <span>5</span>점</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="viganslide">
+                            <div>
+                                <a href="#none"><img src="./img/vigan_02.jpg" alt="" class="vigimg"></a>
+                                <div class="vigan-text">
+                                    <a href="#none">
+                                        <span>사추마 바디 미스트 100ML </span>
+                                    </a><br>
+                                    <div class="vigan-price">
+                                        <span>31,000원</span><br>
+                                        <span><i class="fa-solid fa-star"></i> <span>4.5</span>점</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="viganslide">
+                            <div>
+                                <a href="#none"><img src="./img/vigan_03.jpg" alt="" class="vigimg"></a>
+                                <div class="vigan-text">
+                                    <a href="#none">
+                                        <span>에델바이스 클렌징 컨센트레이트 100ML </span>
+                                    </a><br>
+                                    <div class="vigan-price">
+                                        <span>29,000원</span><br>
+                                        <span><i class="fa-solid fa-star"></i> <span>4</span>점</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="viganslide">
+                            <div>
+                                <a href="#none"><img src="./img/vigan_04.jpg" alt="" class="vigimg"></a>
+                                <div class="vigan-text">
+                                    <a href="#none">
+                                        <span>티트리 젤 샴푸 400ML </span>
+                                    </a><br>
+                                    <div class="vigan-price">
+                                        <span>20,000원</span><br>
+                                        <span><i class="fa-solid fa-star"></i> <span>5</span>점</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="viganslide">
+                            <div>
+                                <a href="#none"><img src="./img/vigan_05.jpg" alt="" class="vigimg"></a>
+                                <div class="vigan-text">
+                                    <a href="#none">
+                                        <span>패션후르츠 리프레싱 젤 바디스크럽 250ML </span>
+                                    </a><br>
+                                    <div class="vigan-price">
+                                        <span>31,000원</span><br>
+                                        <span><i class="fa-solid fa-star"></i> <span>5</span>점</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="viganslide">
+                            <div>
+                                <a href="#none"><img src="./img/vigan_06.jpg" alt="" class="vigimg"></a>
+                                <div class="vigan-text">
+                                    <a href="#none">
+                                        <span>아보카도 바디 로션 투 오일 200ML </span>
+                                    </a><br>
+                                    <div class="vigan-price">
+                                        <span>21,000원</span><br>
+                                        <span><i class="fa-solid fa-star"></i> <span>5</span>점</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </article>
+            </article>
+            <article class="article4">
+                <div class="container">
+                    <h3>더바디샵 추천 라인</h3>
+                    <div class="line-slide-group">
+                        <div class="lineslide">
+                            <div>
+                                <a href="#none"><img src="./img/line_item_01.jpg" alt=""></a>
+                                <h4>
+                                    피부는 보호하고 탄력은 채워주고 <br>
+                                    에델바이스라인
+                                </h4>
+                                <div class="line-box">
+                                    <div class="line-item">
+                                        <a href="#none"><img src="./img/line_데일리세럼_50.jpg" alt=""></a>
+                                        <a href="#none"><span>에델바이스 데일리 세럼 컨센트레이트 50ML</span></a>
+                                        <p>64,000원</p>
+                                    </div>
+                                    <div class="line-item">
+                                        <a href="#none"><img src="./img/line_인텐스크림_50.jpg" alt=""></a>
+                                        <a href="#none"><span>에델바이스 인텐스 크림 50ML</span></a>
+                                        <p>49,000원</p>
+                                    </div>
+                                    <div class="line-item">
+                                        <a href="#none"><img src="./img/line_바운시미스트_57.jpg" alt=""></a>
+                                        <a href="#none"><span>에델바이스 바운시 미스트 57ML</span></a>
+                                        <p>37,000원</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#none"><img src="./img/line_item_02.PNG" alt=""></a>
+                                <h4>
+                                    더운 여름, 피부에 상쾌함과 활력을 주는 텍스쳐<br>
+                                    리프레싱 패션후르츠라인
+                                </h4>
+                                <div class="line-box">
+                                    <div class="line-item">
+                                        <a href="#none"><img src="./img/line_샤워젤_250.jpg" alt=""></a>
+                                        <a href="#none"><span>패션후르츠 리프레싱 샤워 젤 250ML</span></a>
+                                        <p>15,000원</p>
+                                    </div>
+                                    <div class="line-item">
+                                        <a href="#none"><img src="./img/line_바디요거트_200.jpg" alt=""></a>
+                                        <a href="#none"><span>패션후르츠 리프레싱 바디 요거트 200ML</span></a>
+                                        <p>22,000원</p>
+                                    </div>
+                                    <div class="line-item">
+                                        <a href="#none"><img src="./img/line_바디미스트_100.jpg" alt=""></a>
+                                        <a href="#none"><span>패션후르츠 리프레싱 바디 미스트 100ML</span></a>
+                                        <p>19,500원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>    
+            <article class="between">
+                <div class="btwbanner">
+                    <img src="./img/special.jpg" alt="">
+                </div>
+            </article>    
+            <article class="article5">
+                <div class="container">
+                    <ul class="plus">
+                        <li>
+                            <img src="./img/cam1.jpg" alt="">
+                            <a href="#none">바로가기</a>
+                            <span>더바디샵 멤버십</span>
+                        </li>
+                        <li>
+                            <img src="./img/cam2.jpg" alt="">
+                            <a href="#none">바로가기</a>
+                            <span>매장 안내</span>
+                        </li>
+                        <li>
+                            <img src="./img/cam3.jpg" alt="">
+                            <a href="#none">바로가기</a>
+                            <span>청소년 환경과목<br>의무화 서명동참</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="article6">
+                <div class="container">
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <div class="footerwrap">
+                <div class="footer-top cf">
+                    <div class="footer-menu">
+                        <ul class=footrt-menu-nav>
+                            <li><a href="#none"><span>개인정보처리방침</span></a></li>
+                            <li><a href="#none"><span>약관개정안내</span></a></li>
+                            <li><a href="#none"><span>공지사항</span></a></li>
+                            <li><a href="#none"><span>매장안내</span></a></li>
+                            <li><a href="#none"><span>고객센터</span></a></li>
+                        </ul>
+                    </div>
+                    <span class="fam">Republic of Korea <i class="fa-solid fa-angle-down fam-bt"></i>
+                        <div>
+                            <ul>
+                                <li><a href="#none">Australia</a></li>
+                                <li><a href="#none">Austria</a></li>
+                                <li><a href="#none">Belgium/Belgique</a></li>
+                                <li><a href="#none">Canada</a></li>
+                                <li><a href="#none">Danmark/Denmark</a></li>
+                                <li><a href="#none">Deutschland/Germany</a></li>
+                                <li><a href="#none">Estonia</a></li>
+                                <li><a href="#none">France</a></li>
+                                <li><a href="#none">Global</a></li>
+                                <li><a href="#none">Hong Kong</a></li>
+                                <li><a href="#none">Hungary</a></li>
+                                <li><a href="#none">India</a></li>
+                                <li><a href="#none">Indonesia</a></li>
+                                <li><a href="#none">Italy</a></li>
+                                <li><a href="#none">Japan</a></li>
+                                <li><a href="#none">Latvia</a></li>
+                                <li><a href="#none">Lithuania</a></li>
+                                <li><a href="#none">Malaysia</a></li>
+                                <li><a href="#none">Netherlands</a></li>
+                                <li><a href="#none">Norway</a></li>
+                                <li><a href="#none">Philippines</a></li>
+                                <li><a href="#none">Romania</a></li>
+                                <li><a href="#none">Russia</a></li>
+                                <li><a href="#none">Suisse/Switzerland</a></li>
+                                <li><a href="#none">Singapore</a></li>
+                                <li><a href="#none">South Africa</a></li>
+                                <li><a href="#none">Suomi/Finland</a></li>
+                                <li><a href="#none">Sverige/Sweden</a></li>
+                                <li><a href="#none">Taiwan</a></li>
+                                <li><a href="#none">Thailand</a></li>
+                                <li><a href="#none">UK</a></li>
+                                <li><a href="#none">USA</a></li>
+                                <li><a href="#none">Vietnam</a></li>
+    
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+
+                <div class="footer-bt">
+                    <div class="footer-title">
+                        <span>THE BODY SHOP 사업자 정보</span>
+                        <a href="#none" class="btinfo"><i class="fa-solid fa-angle-down"></i></a>
+                        <div class="footer-toggle">
+                            <span>대표이사 박종호</span>
+                            <span>주소 서울시 강남구 학동로 401 13층</span>
+                            <span>고객센터 08-759-7700</span><br>
+                            <span>개인정보관리책임자 정문식</span>
+                            <span>사업자 등록번호 116-81-62784</span><br>
+                            <span>이메일 주소 webmaster@thebodyshop.co.kr</span>
+                            <span>통신판매업신고번호 제 2010-서울강남-02017호 3</span>
+                        </div>
+                    </div>
+                    <div class="footer-time">
+                        <div class="footer-time-text">
+                            <span>고객센터</span>
+                            <span>080-759-7700</span>
+                            <p>평일 10:00 ~ 17:00<br>
+                                점심시간 12:00 ~ 13:00<br>
+                            </p>
+                        </div>
+                    </div>
+                        <p>Copyright(c) THE BODY SHOP All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>history.scrollRestoration = "manual"</script>
+    <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

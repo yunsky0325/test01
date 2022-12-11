@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/rwdcommon.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="icon" href="./img/favi.png">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <title>The Body Shop</title>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+    <div id="wrap">
+        <!-- 상단영역 -->
+        <header id="header">
+            <div class="top_menu">
+                <div class="low">
+                    <a href="./login.html">로그인</a>
+                    <a href="./join.html">회원가입</a>
+                    <a href="#none">LYB멤버십</a>
+                    <a href="#none">고객센터</a>
+                </div>
+            </div>
+            <div class="menu low">
+                <h1><a href="index.html"><img src="./img/logo.png" alt="더바디샵로고"></a></h1>
+                <div class="opennav">
+                    <span class="blind">네비게이션 열고 닫기</span>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                    <div class="nav">
+                        <ul class="depth1 cf">
+                            <li>
+                                <a href="#">TRENDING</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">TIP&Advice</a></li>
+                                    <li><a href="#none">Best Sellers</a></li>
+                                    <li><a href="#none">Vigan</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">제품</a>
+                                <ul class="depth2 product">
+                                    <li><a href="#none">전체보기</a></li>
+                                    <li><a href="#none">NEW</a></li>
+                                    <li class="depthgroup1">
+                                        <a href="#">FACE</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">FACE 전체보기</a></li>
+                                            <li><a href="#none">클렌저</a></li>
+                                            <li><a href="#none">스크럽&마스크</a></li>
+                                            <li><a href="#none">페이스오일</a></li>
+                                            <li><a href="#none">토너&미스트</a></li>
+                                            <li><a href="#none">세럼</a></li>
+                                            <li><a href="#none">모이스처라이저</a></li>
+                                            <div>
+                                                <li><a href="#none">아이케어</a></li>
+                                                <li><a href="#none">립케어</a></li>
+                                                <li><a href="#none">메이크업</a></li>
+                                                <li><a href="#none">화장솜&액세서리</a></li>
+                                                <li><a href="#none">남성스킨케어</a></li>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li class="depthgroup2">
+                                        <a href="#">BODY</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">BODY 전체보기</a></li>
+                                            <li><a href="#none">대용량 바디케어</a></li>
+                                            <li><a href="#none">배쓰&샤워</a></li>
+                                            <li><a href="#none">바디스크럽</a></li>
+                                            <li><a href="#none">바디모이스처라이저</a></li>
+                                            <li><a href="#none">바디 오일</a></li>
+                                            <li><a href="#none">바디 미스트</a></li>
+                                            <div>
+                                                <li><a href="#none">데오도란트</a></li>
+                                                <li><a href="#none">풋케어</a></li>
+                                                <li><a href="#none">핸드크림</a></li>
+                                                <li><a href="#none">비누</a></li>
+                                                <li><a href="#none">액세서리</a></li>
+                                                <li><a href="#none">트래블 에센셜</a></li>
+                                                <li><a href="#none">핸드워시</a></li>
+                                                <li class="menuright"><a href="#none">세트 상품</a></li>
+                                            </div>
+                                        </ul>
+                                    </li>
+                                    <li class="depthgroup3">
+                                        <a href="#">HAIR</a>
+                                        <ul class="depth3">
+                                            <li><a href="#none">HAIR 전체보기</a></li>
+                                            <li><a href="#none">샴푸</a></li>
+                                            <li><a href="#none">컨디셔너&트리트먼트</a></li>
+                                            <li><a href="#none">액세서리</a></li>
+                                            <li><a href="#none">대용량 헤어케어</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">향수</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">FRAGRANCE 전체보기</a></li>
+                                    <li><a href="#none">For Him</a></li>
+                                    <li><a href="#none">For Her</a></li>
+                                    <li><a href="#none">For Everyone</a></li>
+                                    <li><a href="#none">오 드 퍼퓸</a></li>
+                                    <li><a href="#none">오 드 뚜왈렛</a></li>
+                                    <li><a href="#none">바디 미스트</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">선물</a>
+                                <ul class="depth2 gift">
+                                    <li><a href="#none">선물세트 전체보기</a></li>
+                                    <li><a href="#none">1만원대 선물세트</a></li>
+                                    <li><a href="#none">2만원대 선물세트</a></li>
+                                    <li><a href="#none">3만원대 선물세트</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">세일</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">세일</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">SELF LOVE</a>
+                                <ul class="depth2">
+                                    <li><a href="#none">셀프러브란?</a></li>
+                                    <li><a href="#none">셀프러브로 맞서자</a></li>
+                                    <li><a href="#none">리딩라이츠</a></li>
+                                    <li><a href="#none">셀프러브 팁</a></li>
+                                    <li><a href="#none">셀프러브 마사지</a></li>
+                                    <li><a href="#none">셀프러브 퀴즈</a></li>
+                                    <li><a href="#none">셀프러브 인덱스</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">ABOUT US</a>
+                                <ul class="depth2 aboutus">
+                                    <li class="aboutus-sub">
+                                        <a href="#none">About Us</a>
+                                        <ul>
+                                            <li><a href="#none">브랜드 스토리</a></li>
+                                            <li><a href="#none">브랜드 목적</a></li>
+                                            <li><a href="#none">B코프 인증기업</a></li>
+                                            <li><a href="#none">Natura & Co</a></li>
+                                            <li><a href="#none">제품원료</a></li>
+                                            <li><a href="#none">About CBS</a></li>
+                                            <li><a href="#none">캠페인</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="aboutus-sub">
+                                        <a href="#none">Our Values</a>
+                                        <ul>
+                                            <li><a href="#none">지구를 위한 실천, 리필바</a></li>
+                                            <li><a href="#none">여성 권익 신장을 위한 캠페인 히스토리</a></li>
+                                            <li><a href="#none">더바디샵만의 공정무역 프로그램</a></li>
+                                            <li><a href="#none">지속 가능한 패키징</a></li>
+                                            <li><a href="#none">공정무역으로 재탄생한 플라스틱 이야기</a></li>
+                                            <li><a href="#none">비건 & 베지테리언 제품 알아보기</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="aboutus-sub">
+                                        <a href="#none">Event</a>
+                                        <ul>
+                                            <li><a href="#">진행 중인 이벤트</a></li>
+                                            <li><a href="#">지난 이벤트</a></li>
+                                            <li><a href="#">당첨자 발표</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="person cf">
+                        <div class="search">
+                            <span class="blind">검색어를 입력하세요</span>
+                            <input type="search"  id="sbox">
+                            <label for="sbox"><i class="fas fa-search icon"></i></label>
+                        </div>
+                        <div class="service">
+                            <a href="#"><i class="fa-solid fa-basket-shopping icon"></i></a>
+                            <a href="./login.html"><i class="fa-solid fa-user icon"></i></a>
+                        </div>
+                    </div>
+
+            </div>
+        </header>
+        <!-- 본문내용 시작 -->
+        <section>  
+            <div class="login_wrap">
+                <form action="#" name="loginForm" method="post">
+                    <fieldset>
+                        <legend>로그인폼</legend>
+                        <!-- 로그인/비회원 주문 탭 칸 -->
+                        <div class="login-container">
+                            <ul class="tabs">
+                                <li class="tab-link current" data-tab="tab-1">로그인</li>
+                                <li class="tab-link" data-tab="tab-2">비회원</li>
+                            </ul>                        
+                            <div id="tab-1" class="tab-content current">
+                                    <p><input type="text" id="id" placeholder="아이디"></p>
+                                    <p><input type="password" id="password" placeholder="비밀번호"></p>
+                                    <div>
+                                            <input id="idsave" type="checkbox" value="yes"> 
+                                            <label for="idsave">아이디 저장</label>
+                                    </div>
+                                    <div>
+                                        <input id="idauto" type="checkbox" value="idauto"> 
+                                        <label for="idauto">자동 로그인</label>
+                                    </div>
+                                    <p><button type="submit">로그인</button></p>
+                            </div>
+                            <div id="tab-2" class="tab-content">
+                                <p><input type="text" id="order_email" placeholder="주문자 이메일"></p>
+                                <p><input type="text" id="order_seq" placeholder="주문 번호"></p>
+                                <p><button type="submit">주문 조회하기</button></p>
+                            </div>
+                            <div class="login-list">
+                                <a href="./join.html">회원가입</a>
+                                <span>&nbsp; | &nbsp;</span>
+                                <a href="#">아이디 찾기</a>
+                                <span>&nbsp; | &nbsp;</span>
+                                <a href="#">비밀번호 찾기</a>
+                            </div>
+                        
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>  
+        <!-- 하단영역 -->
+        <footer>
+            <div class="footerwrap">
+                <div class="footer-top cf">
+                    <div class="footer-menu">
+                        <ul class=footrt-menu-nav>
+                            <li><a href="#none"><span>개인정보처리방침</span></a></li>
+                            <li><a href="#none"><span>약관개정안내</span></a></li>
+                            <li><a href="#none"><span>공지사항</span></a></li>
+                            <li><a href="#none"><span>매장안내</span></a></li>
+                            <li><a href="#none"><span>고객센터</span></a></li>
+                        </ul>
+                    </div>
+                    <span class="fam">Republic of Korea <i class="fa-solid fa-angle-down fam-bt"></i>
+                        <div>
+                            <ul>
+                                <li><a href="#none">Australia</a></li>
+                                <li><a href="#none">Austria</a></li>
+                                <li><a href="#none">Belgium/Belgique</a></li>
+                                <li><a href="#none">Canada</a></li>
+                                <li><a href="#none">Danmark/Denmark</a></li>
+                                <li><a href="#none">Deutschland/Germany</a></li>
+                                <li><a href="#none">Estonia</a></li>
+                                <li><a href="#none">France</a></li>
+                                <li><a href="#none">Global</a></li>
+                                <li><a href="#none">Hong Kong</a></li>
+                                <li><a href="#none">Hungary</a></li>
+                                <li><a href="#none">India</a></li>
+                                <li><a href="#none">Indonesia</a></li>
+                                <li><a href="#none">Italy</a></li>
+                                <li><a href="#none">Japan</a></li>
+                                <li><a href="#none">Latvia</a></li>
+                                <li><a href="#none">Lithuania</a></li>
+                                <li><a href="#none">Malaysia</a></li>
+                                <li><a href="#none">Netherlands</a></li>
+                                <li><a href="#none">Norway</a></li>
+                                <li><a href="#none">Philippines</a></li>
+                                <li><a href="#none">Romania</a></li>
+                                <li><a href="#none">Russia</a></li>
+                                <li><a href="#none">Suisse/Switzerland</a></li>
+                                <li><a href="#none">Singapore</a></li>
+                                <li><a href="#none">South Africa</a></li>
+                                <li><a href="#none">Suomi/Finland</a></li>
+                                <li><a href="#none">Sverige/Sweden</a></li>
+                                <li><a href="#none">Taiwan</a></li>
+                                <li><a href="#none">Thailand</a></li>
+                                <li><a href="#none">UK</a></li>
+                                <li><a href="#none">USA</a></li>
+                                <li><a href="#none">Vietnam</a></li>
+    
+                            </ul>
+                        </div>
+                    </span>
+                </div>
+
+                <div class="footer-bt">
+                    <div class="footer-title">
+                        <span>THE BODY SHOP 사업자 정보</span>
+                        <a href="#none" class="btinfo"><i class="fa-solid fa-angle-down"></i></a>
+                        <div class="footer-toggle">
+                            <span>대표이사 박종호</span>
+                            <span>주소 서울시 강남구 학동로 401 13층</span>
+                            <span>고객센터 08-759-7700</span><br>
+                            <span>개인정보관리책임자 정문식</span>
+                            <span>사업자 등록번호 116-81-62784</span><br>
+                            <span>이메일 주소 webmaster@thebodyshop.co.kr</span>
+                            <span>통신판매업신고번호 제 2010-서울강남-02017호 3</span>
+                        </div>
+                    </div>
+                    <div class="footer-time">
+                        <div class="footer-time-text">
+                            <span>고객센터</span>
+                            <span>080-759-7700</span>
+                            <p>평일 10:00 ~ 17:00<br>
+                                점심시간 12:00 ~ 13:00<br>
+                            </p>
+                        </div>
+                    </div>
+                        <p>Copyright(c) THE BODY SHOP All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>history.scrollRestoration = "manual"</script>
+    <script src="./js/common.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+</html>
